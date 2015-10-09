@@ -163,11 +163,15 @@ section{
 
 // statistics
 #statistics{
+	background-color: $orange;
+	span{
+		font-weight: 900;
+		font-size: 35px;
+	}
 	.left{
-		background-color: $orange;
 	}
 	.right{
-	
+		background-color: #fff;
 	}
 }
 
