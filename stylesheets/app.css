@@ -2085,7 +2085,7 @@ h1 {
 
 /* line 200, ../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_type.scss */
 h2 {
-  font-size: 1.125em;
+  font-size: 1.875em;
 }
 
 /* line 201, ../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_type.scss */
@@ -2306,7 +2306,7 @@ blockquote p {
 
   /* line 370, ../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_type.scss */
   h2 {
-    font-size: 1.75em;
+    font-size: 2.5em;
   }
 
   /* line 371, ../../../../../Library/Ruby/Gems/2.0.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_type.scss */
@@ -7293,10 +7293,15 @@ body, p, h1, h2, h3, h4, h5, h6 {
 /* line 79, ../sass/app.scss */
 h1, h2, h3, h4 {
   text-transform: uppercase;
-  line-height: 0.95;
+  line-height: 1;
 }
 
 /* line 83, ../sass/app.scss */
+h2 {
+  font-weight: 600;
+}
+
+/* line 86, ../sass/app.scss */
 .clearfix:before, .clearfix:after {
   clear: both;
   content: " ";
@@ -7304,21 +7309,21 @@ h1, h2, h3, h4 {
   background-color: black;
 }
 
-/* line 89, ../sass/app.scss */
+/* line 92, ../sass/app.scss */
 section {
   padding: 50px 0;
 }
 
-/* line 92, ../sass/app.scss */
+/* line 95, ../sass/app.scss */
 .button {
   background-color: #f05674;
 }
-/* line 94, ../sass/app.scss */
+/* line 97, ../sass/app.scss */
 .button:hover {
   background-color: #d34466;
 }
 
-/* line 101, ../sass/app.scss */
+/* line 104, ../sass/app.scss */
 #intro {
   padding: 0;
   background-image: url("../images/intro-group.jpg");
@@ -7326,26 +7331,26 @@ section {
   background-position: center bottom;
   box-shadow: inset 0 0 0 1000px rgba(0, 115, 127, 0.8);
 }
-/* line 107, ../sass/app.scss */
+/* line 110, ../sass/app.scss */
 #intro .row, #intro .columns {
   margin: 0 auto;
   text-align: center;
   padding: 0;
 }
-/* line 112, ../sass/app.scss */
+/* line 115, ../sass/app.scss */
 #intro img {
   padding: 20% 10%;
 }
 
-/* line 123, ../sass/app.scss */
+/* line 126, ../sass/app.scss */
 #testimonials {
   background-color: #fcb53b;
 }
-/* line 125, ../sass/app.scss */
+/* line 128, ../sass/app.scss */
 #testimonials img {
   z-index: 200;
 }
-/* line 130, ../sass/app.scss */
+/* line 133, ../sass/app.scss */
 #testimonials h2:before {
   color: #fff;
   background-color: #fcb53b;
@@ -7355,32 +7360,32 @@ section {
   margin: 0 10px 30px 0;
   float: left;
 }
-/* line 134, ../sass/app.scss */
+/* line 137, ../sass/app.scss */
 #testimonials .columns {
   margin: 0;
   padding: 0;
 }
-/* line 138, ../sass/app.scss */
+/* line 141, ../sass/app.scss */
 #testimonials .description {
   position: relative;
   margin: -50px 0.75em 0.75em 0.75em;
   padding: 1.25em;
   background-color: white;
 }
-/* line 143, ../sass/app.scss */
+/* line 146, ../sass/app.scss */
 #testimonials .description * {
   z-index: 100;
 }
 
-/* line 150, ../sass/app.scss */
+/* line 153, ../sass/app.scss */
 #map {
   background-color: #00b5d1;
 }
-/* line 152, ../sass/app.scss */
+/* line 155, ../sass/app.scss */
 #map h2 {
   color: #fcb53b;
 }
-/* line 153, ../sass/app.scss */
+/* line 156, ../sass/app.scss */
 #map h2:before {
   color: #fff;
   background-color: #f05674;
@@ -7390,14 +7395,14 @@ section {
   margin: 0 10px 30px 0;
   float: left;
 }
-/* line 158, ../sass/app.scss */
+/* line 161, ../sass/app.scss */
 #map h3 {
   text-align: center;
   color: #fcb53b;
   padding: 20px 0;
   border-bottom: 1px dotted #fff;
 }
-/* line 164, ../sass/app.scss */
+/* line 167, ../sass/app.scss */
 #map ul {
   -webkit-column-count: 3;
   /* Chrome, Safari, Opera */
@@ -7405,12 +7410,12 @@ section {
   /* Firefox */
   column-count: 3;
 }
-/* line 168, ../sass/app.scss */
+/* line 171, ../sass/app.scss */
 #map ul li {
   color: #fff;
   list-style: none;
 }
-/* line 171, ../sass/app.scss */
+/* line 174, ../sass/app.scss */
 #map ul li:before {
   content: "+";
   color: #fcb53b;
@@ -7419,11 +7424,18 @@ section {
   font-size: 20px;
 }
 
-/* line 184, ../sass/app.scss */
+/* line 186, ../sass/app.scss */
+#infographic {
+  background: url("../images/bg-twitter.jpg") center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5);
+}
+/* line 191, ../sass/app.scss */
 #infographic h2 {
   color: #00b5d1;
 }
-/* line 186, ../sass/app.scss */
+/* line 193, ../sass/app.scss */
 #infographic h2:before {
   color: #fff;
   background-color: #f05674;
@@ -7433,44 +7445,128 @@ section {
   margin: 0 10px 30px 0;
   float: left;
 }
-/* line 190, ../sass/app.scss */
+/* line 197, ../sass/app.scss */
 #infographic h3 {
   color: #f05674;
   text-align: center;
+  margin-top: 40px;
 }
-/* line 194, ../sass/app.scss */
+/* line 202, ../sass/app.scss */
 #infographic h4 {
   color: black;
-}
-/* line 197, ../sass/app.scss */
-#infographic .missions {
-  text-align: center;
-}
-
-/* line 205, ../sass/app.scss */
-#statistics {
-  background-color: #fcb53b;
+  line-height: 1.5;
+  margin-top: 20px;
 }
 /* line 207, ../sass/app.scss */
-#statistics span {
-  font-weight: 900;
-  font-size: 35px;
+#infographic .missions {
+  min-height: 225px;
+  text-align: center;
+  margin-top: 50px;
+  border-right: 1px #f05674 dotted;
 }
-/* line 213, ../sass/app.scss */
-#statistics .right {
-  background-color: #fff;
+/* line 212, ../sass/app.scss */
+#infographic .missions:last-child {
+  border-right: none;
 }
 
-/* line 219, ../sass/app.scss */
+/* line 222, ../sass/app.scss */
+#statistics {
+  padding: 0;
+  background: url("../images/bg-twitter.jpg") center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(252, 181, 59, 0.8);
+}
+/* line 228, ../sass/app.scss */
+#statistics h3 {
+  font-weight: 900;
+  font-size: 85px;
+  margin-bottom: 10px;
+}
+/* line 233, ../sass/app.scss */
+#statistics p {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 237, ../sass/app.scss */
+#statistics .stat {
+  width: 100%;
+  padding: 0 0.9375em;
+}
+/* line 240, ../sass/app.scss */
+#statistics .stat img {
+  padding: 1%;
+}
+/* line 244, ../sass/app.scss */
+#statistics .col-left {
+  padding-top: 50px;
+}
+/* line 246, ../sass/app.scss */
+#statistics .col-left h3 {
+  font-size: 8.125em;
+  color: #fff;
+  margin-top: 10px;
+}
+/* line 251, ../sass/app.scss */
+#statistics .col-left p {
+  font-size: 60px;
+  color: #f05674;
+  line-height: 1;
+}
+/* line 258, ../sass/app.scss */
+#statistics .col-right h3 {
+  color: #f05674;
+}
+/* line 261, ../sass/app.scss */
+#statistics .col-right .stat {
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5);
+}
+/* line 265, ../sass/app.scss */
+#statistics .col-right .stat:nth-child(3) h3 {
+  color: #00b5d1;
+}
+/* line 269, ../sass/app.scss */
+#statistics .col-right .stat:nth-child(2) {
+  background-color: rgba(0, 180, 208, 0.8);
+  box-shadow: none;
+}
+/* line 270, ../sass/app.scss */
+#statistics .col-right .stat:nth-child(2) h3 {
+  color: #fff;
+}
+
+/* line 281, ../sass/app.scss */
 #signup {
   background-color: #00b5d1;
 }
-/* line 221, ../sass/app.scss */
+/* line 283, ../sass/app.scss */
 #signup h2, #signup h3, #signup h4 {
   color: #fff;
 }
 
-/* line 230, ../sass/app.scss */
+/* line 291, ../sass/app.scss */
+#logos h3 {
+  color: #f05674;
+  text-align: center;
+  letter-spacing: 1px;
+}
+/* line 296, ../sass/app.scss */
+#logos h4 {
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 40px 0 20px;
+}
+/* line 302, ../sass/app.scss */
+#logos .large-8 img {
+  margin: 0 2%;
+}
+/* line 306, ../sass/app.scss */
+#logos .biglist {
+  border-top: 1px dotted #f05674;
+  padding-top: 40px;
+  margin-top: 40px;
+}
+/* line 310, ../sass/app.scss */
 #logos .biglist ul {
   -webkit-column-count: 5;
   /* Chrome, Safari, Opera */
@@ -7478,12 +7574,12 @@ section {
   /* Firefox */
   column-count: 5;
 }
-/* line 234, ../sass/app.scss */
+/* line 314, ../sass/app.scss */
 #logos .biglist ul li {
   list-style: none;
   margin: 20px 0;
 }
-/* line 239, ../sass/app.scss */
+/* line 319, ../sass/app.scss */
 #logos .biglist img {
   width: 100%;
   height: 50px;

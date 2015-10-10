@@ -55,13 +55,13 @@
 // @import "foundation/components/dropdown";
 
 @mixin plus-add($pluscolor, $color) {
-			color: $color;
-			background-color: $pluscolor;
-			content: "+";
-			padding: 0 4px;
-			font-size: 30px;
-			margin:0 10px 30px 0;
-			float: left;
+	color: $color;
+	background-color: $pluscolor;
+	content: "+";
+	padding: 0 4px;
+	font-size: 30px;
+	margin:0 10px 30px 0;
+	float: left;
 }
 
 // COLORS
@@ -78,13 +78,16 @@ body, p, h1, h2, h3, h4, h5, h6{
 }
 h1, h2, h3, h4{
 	text-transform: uppercase;
-	line-height: 0.95;
+	line-height: 1;
+}
+h2{
+	font-weight: 600;
 }
 .clearfix:before, .clearfix:after{
 	clear:both;
-  content: " ";
-  display: table;
-  background-color: black;
+	content: " ";
+	display: table;
+	background-color: black;
 }
 section{
 	padding: 50px 0;
@@ -181,6 +184,10 @@ section{
 
 // infographic largest pipeline
 #infographic{
+	background: url('../images/bg-twitter.jpg') center center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	box-shadow: inset 0 0 0 1000px rgba(255,255,255, 0.5);
 	h2{
 		color: $teal;
 		&:before{
@@ -190,29 +197,84 @@ section{
 	h3{
 		color: $pink;
 		text-align: center;
+		margin-top: 40px;
 	}
 	h4{
 		color: black;
+		line-height: 1.5;
+		margin-top: 20px;
 	}
 	.missions{
+		min-height: 225px;
 		text-align: center;
+		margin-top: 50px;
+		border-right: 1px $pink dotted;
+		&:last-child{
+			border-right: none;
+		}
 	}
+
 }
 
 
 
 // statistics
 #statistics{
-	background-color: $orange;
-	span{
+	padding: 0;
+	background: url('../images/bg-twitter.jpg') center center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	box-shadow: inset 0 0 0 1000px rgba(252,181,59, 0.8);
+	h3{
 		font-weight: 900;
-		font-size: 35px;
+		font-size: 85px;
+		margin-bottom: 10px;
 	}
-	.left{
+	p{
+		font-weight: bold;
+		text-transform: uppercase;
 	}
-	.right{
-		background-color: #fff;
+	.stat{
+		width: 100%;
+		padding: 0 0.9375em;
+		img{
+			padding: 1%;
+		}
 	}
+	.col-left{
+		padding-top: 50px;
+		h3{
+			font-size: em-calc(130);
+			color: #fff;
+			margin-top: 10px;
+		}
+		p{
+			font-size: 60px;
+			color: $pink;
+			line-height: 1;
+		}
+	}
+	.col-right{
+		h3{
+			color: $pink;
+		}
+		.stat{
+			box-shadow: inset 0 0 0 1000px rgba(255,255,255, 0.5);
+		}
+		.stat:nth-child(3){
+			h3{
+				color: $teal;
+			}
+		}
+		.stat:nth-child(2){
+			h3{
+				color: #fff;
+			}
+			background-color: rgba(0, 180, 208, 0.8);
+			box-shadow: none;
+		}
+	}
+	
 }
 
 // signup area
@@ -226,7 +288,25 @@ section{
 
 // logos
 #logos{
+	h3{
+		color: $pink;
+		text-align: center;
+		letter-spacing: 1px;
+	}
+	h4{
+		text-align: center;
+		letter-spacing: 1px;
+		margin: 40px 0 20px;
+	}
+	.large-8{
+		img{
+			margin: 0 2%;
+		}
+	}
 	.biglist{
+		border-top:1px dotted $pink;
+		padding-top: 40px;
+		margin-top: 40px;
 		ul{
 			-webkit-column-count: 5; /* Chrome, Safari, Opera */
 			-moz-column-count: 5; /* Firefox */
