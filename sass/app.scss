@@ -68,9 +68,10 @@
 $orange: #fcb53b;
 //252,181,59
 $teal: #00b5d1;
-//0,81,209
+//0, 180, 208
 $pink: #f05674;
 //240,86,116
+$darkpink: #d34466;
 
 body, p, h1, h2, h3, h4, h5, h6{
 	font-family: 'Open Sans', sans-serif;
@@ -88,21 +89,59 @@ h1, h2, h3, h4{
 section{
 	padding: 50px 0;
 }
+.button{
+	background-color:$pink;
+	&:hover{
+		background-color: $darkpink;
 
+	}
+}
 
 // header
 #intro{
+	padding: 0;
 	background-image: url('../images/intro-group.jpg');
 	background-size: cover;
 	background-position: center bottom;
-	height: 400px;
+	box-shadow: inset 0 0 0 1000px rgba(0,115,127, 0.8);
+	.row, .columns{
+		margin: 0 auto;
+		text-align: center;
+		padding: 0;
+	}
+	img{
+		padding: 20% 10%;
+	}
+}
+
+// sign the #hireme pledge
+#action{
+	
 }
 
 // three testimonials
 #testimonials{
+	background-color: $orange;
+	img{
+		z-index: 200;
+	}
 	h2{
+
 		&:before{
 			@include plus-add($orange, #fff);
+		}
+	}
+	.columns{
+		margin: 0;
+		padding: 0;
+	}
+	.description{
+		position: relative;
+		margin:-50px 0.75em 0.75em 0.75em;
+		padding:1.25em;
+		background-color: white;
+		*{
+			z-index: 100;
 		}
 	}
 }
@@ -119,6 +158,7 @@ section{
 	h3{
 		text-align: center;
 		color: $orange;
+		padding:20px 0;
 		border-bottom: 1px dotted #fff;
 	}
 	ul {
