@@ -7556,32 +7556,21 @@ section {
   letter-spacing: 1px;
   margin: 40px 0 20px;
 }
-/* line 302, ../sass/app.scss */
-#logos .large-8 img {
-  margin: 0 2%;
-}
 /* line 306, ../sass/app.scss */
 #logos .biglist {
   border-top: 1px dotted #f05674;
   padding-top: 40px;
   margin-top: 40px;
 }
-/* line 310, ../sass/app.scss */
-#logos .biglist ul {
-  -webkit-column-count: 5;
-  /* Chrome, Safari, Opera */
-  -moz-column-count: 5;
-  /* Firefox */
-  column-count: 5;
-}
-/* line 314, ../sass/app.scss */
+/* line 311, ../sass/app.scss */
 #logos .biglist ul li {
   list-style: none;
-  margin: 20px 0;
+  display: inline-block;
+  width: 19%;
+  margin: 0;
+  padding: 0 10px;
 }
 /* line 319, ../sass/app.scss */
 #logos .biglist img {
   width: 100%;
-  height: 50px;
-  background-color: #666;
 }
