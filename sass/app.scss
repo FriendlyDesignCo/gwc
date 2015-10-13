@@ -171,12 +171,6 @@ nav{
 	}
 }
 
-// sign the #hireme pledge (early)
-#action{
-	.flex-video *{
-		z-index: 200;
-	}
-}
 
 
 // three testimonials
@@ -198,6 +192,9 @@ nav{
 		position: relative;
 		&:before{
 			@include plus-add($orange, #fff);
+		}
+		@media(max-width: $medium-screen){
+			font-size: 1.75em;
 		}
 	}
 	.columns{
@@ -361,8 +358,12 @@ nav{
 			font-size: em-calc(130);
 			color: #fff;
 			margin-top: 10px;
+			@media(max-width: $medium-screen){
+				font-size: em-calc(100);
+			}
 			@media(max-width: $small-screen){
 				font-size: em-calc(100);
+				text-align: center;
 			}
 		}
 		p{
@@ -372,6 +373,7 @@ nav{
 			@media(max-width: $small-screen){
 				font-size: 40px;
 				margin-bottom: 0.75em;
+				text-align: center;
 			}
 		}
 	}
@@ -400,6 +402,27 @@ nav{
 		}
 	}
 	
+}
+
+// CTA
+
+#cta{
+	padding-top: 140px;
+	@media(max-width: $small-screen){
+		padding-top:20px;
+	}
+	.flex-video *{
+		z-index: 200;
+	}
+	.text{
+		padding-top: 60px;
+		@media(max-width: $small-screen){
+			padding-top: 0;
+		}
+		h3{
+			line-height: 1.4;
+		}
+	}
 }
 
 // signup area
