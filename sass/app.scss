@@ -91,7 +91,6 @@ h2{
 	clear:both;
 	content: " ";
 	display: table;
-	background-color: black;
 }
 section{
 	padding: 50px 0;
@@ -101,11 +100,43 @@ section{
 }
 .button{
 	background-color:$pink;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 	&:hover{
 		background-color: $darkpink;
 
 	}
 }
+
+// Navigation
+nav{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 500;
+	background-color: rgba(252,181, 59, 0.9);
+	padding: 0 20px;
+	.logo{
+		float: left;
+		display: block;
+		width: 185px;
+		height: 81px;
+		background: url('../images/logo-gwc.png') no-repeat center center;
+		background-size: 75%;
+		text-indent: -9999px;
+		// margin-left: 20px;
+	}
+	h1{
+		text-align: right;
+		font-weight: 900;
+		color: $teal;
+		margin-top: 24px;
+		span{
+			color: #fff;
+		}
+	}
+}
+
 
 // header
 #intro{
@@ -130,7 +161,11 @@ section{
 
 // sign the #hireme pledge (early)
 #action{
+	.flex-video *{
+		z-index: 200;
+	}
 }
+
 
 // three testimonials
 #testimonials{
@@ -356,7 +391,7 @@ section{
 }
 
 // signup area
-#signup{
+#signup, #cta{
 	background-color: $teal;
 	background: url('../images/bg-talking.jpg') center top no-repeat;
 	background-size: cover;
@@ -420,17 +455,5 @@ section{
 	}
 	img.small{
 		width: 70%;
-	}
-	img.small.adobe{
-		width: 30%;
-		@media(max-width: $small-screen){
-		width: 90%;
-		}
-	}
-	img.small.att{
-		width: 40%;
-		@media(max-width: $small-screen){
-			width: 80%;
-		}
 	}
 }
