@@ -114,11 +114,14 @@ nav{
 	top: 0;
 	width: 100%;
 	z-index: 500;
-	background-color: rgba(252,181, 59, 0.9);
+	background: rgba(252,181, 59, 0.9) url('../images/bg-lines.png') repeat-x center -120px;
+	background-size: 20%;
 	padding: 0 20px;
 	@media(max-width: $small-screen){
 		position: relative;
 		padding: 20px;
+		background-position: center -50px;
+		background-size: 35%;
 
 	}
 	.logo{
