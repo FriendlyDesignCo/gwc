@@ -7781,42 +7781,29 @@ nav h1 span {
 }
 
 /* line 451, ../sass/app.scss */
-#logos h3 {
+#logos h3, #partners h3 {
   color: #f05674;
   text-align: center;
   letter-spacing: 1px;
 }
 /* line 456, ../sass/app.scss */
-#logos h4 {
+#logos h4, #partners h4 {
   text-align: center;
   letter-spacing: 1px;
   margin: 40px 0 20px;
 }
 /* line 462, ../sass/app.scss */
-#logos .founders img {
+#logos .founders img, #partners .founders img {
   max-width: 200px;
 }
 @media (max-width: 768px) {
   /* line 462, ../sass/app.scss */
-  #logos .founders img {
+  #logos .founders img, #partners .founders img {
     width: 100%;
   }
 }
-/* line 470, ../sass/app.scss */
-#logos .biglist {
-  border-top: 1px dotted #f05674;
-  padding-top: 40px;
-  margin-top: 40px;
-}
-@media (max-width: 768px) {
-  /* line 470, ../sass/app.scss */
-  #logos .biglist {
-    padding-top: 20px;
-    margin-top: 20px;
-  }
-}
-/* line 479, ../sass/app.scss */
-#logos .biglist ul li {
+/* line 472, ../sass/app.scss */
+#logos .biglist ul li, #partners .biglist ul li {
   list-style: none;
   display: inline-block;
   width: 13%;
@@ -7824,17 +7811,17 @@ nav h1 span {
   padding: 0 10px;
 }
 @media (max-width: 768px) {
-  /* line 479, ../sass/app.scss */
-  #logos .biglist ul li {
+  /* line 472, ../sass/app.scss */
+  #logos .biglist ul li, #partners .biglist ul li {
     padding: none;
     width: 19%;
   }
 }
-/* line 491, ../sass/app.scss */
-#logos .biglist img {
+/* line 484, ../sass/app.scss */
+#logos .biglist img, #partners .biglist img {
   width: 100%;
 }
-/* line 495, ../sass/app.scss */
-#logos img.small {
+/* line 488, ../sass/app.scss */
+#logos img.small, #partners img.small {
   width: 70%;
 }

@@ -447,7 +447,7 @@ nav{
 
 
 // logos
-#logos{
+#logos, #partners{
 	h3{
 		color: $pink;
 		text-align: center;
@@ -468,13 +468,6 @@ nav{
 
 	}
 	.biglist{
-		border-top:1px dotted $pink;
-		padding-top: 40px;
-		margin-top: 40px;
-		@media(max-width: $small-screen){
-		padding-top: 20px;
-		margin-top: 20px;
-		}
 		ul{
 			li{
 				list-style: none;
