@@ -184,7 +184,7 @@ $default-float: left;
 // Control header font sizes
 
    $h1-font-size: em-calc(34);
-   $h2-font-size: em-calc(28);
+   $h2-font-size: em-calc(40);
    $h3-font-size: em-calc(24);
    $h4-font-size: em-calc(20);
    $h5-font-size: em-calc(18);
@@ -384,8 +384,8 @@ $default-float: left;
 
 // We use these to control button border styles.
 
-// $button-border-width: 1px;
-// $button-border-style: solid;
+   $button-border-width: 0;
+   $button-border-style: none;
 
 // We use this to set the default radius used throughout the core.
 
